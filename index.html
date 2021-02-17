@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header container">
+    <h1>
+      Simple, traffic-based pricing
+    </h1>
+    <p>
+      Sign-up for our 30-day trial. No credit card required.
+    </p>
+  </header>
+
+  <div class="main-box">
+    <div class="price-line">
+      <p class="price-line-small page-views">
+        100k pageviews
+      </p>
+      <p class="price-line-big">
+        $<span class="price-line-big price-month">16.00
+        </span><span class="price-line-small">
+          / month
+        </span>
+      </p>
+
+    </div>
+    <input type="range" class="slider" min="0" max="4" step="1">
+    
+    <div class="toggle-line">
+      <p class="toggle-text">
+        Monthy Billing
+      </p>
+      <div class="toggle">
+        <div class="toggle-monthly checked">
+
+        </div>
+        <div class="toggle-yearly ">
+
+        </div>
+      </div>
+      <p class="toggle-text">
+        Yearly Billing
+      </p>
+      <div class="toggle-red-text">
+        25% discount
+      </div>
+    </div>
+    <div class="middle-border">
+
+    </div>
+    <div class="benefits">
+      <div class="benefits-list">
+        <ul class="toggle-text">
+          <li>
+            <p>
+              Unlimited websites
+            </p>
+          </li>
+          <li>
+            <p>
+              100% data ownership
+            </p>
+          </li>
+          <li>
+            <p>Email reports</p>
+          </li>
+        </ul>
+      </div>
+      <button class="btn">
+        Start my trial
+      </button>
+    </div>
+  </div>  
+
+
+
+
+
+
+
+  <!-- Pageviews
+  $ /month
+
+  Monthly Billing
+  Yearly Billing 25% discount
+
+  Unlimited websites
+  100% data ownership
+  Email reports
+
+  Start my trial -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/bartadamiak">Bart Adamiak</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

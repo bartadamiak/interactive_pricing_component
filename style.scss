@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+body {
+    background: url("images/bg-pattern.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    margin: 7.6rem auto;
+    background: url("images/pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.header h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 800;
+    color: #2f3454;
+}
+
+.header p {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #979faa;
+}
+
+.main-box {
+    max-width: 536px;
+    
+    width: 80%;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 1px 1px 15px #cccccc;
+    margin: 0 auto;
+    // padding: 3rem 1rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.price-line {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.price-line-small {
+    color: #878a9b;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.price-line-big {
+    color: #151d41;
+    font-size: 2.5rem;
+    font-weight: 800;
+    .price-line-small {
+        text-transform: none;
+    }
+}
+
+.slider {
+    margin-top: 50px;
+    margin-bottom: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    // height: 10px;
+    // background: hsl(223, 50%, 87%);
+    display: flex;
+    // border-radius: 15px;
+    // position: relative;
+}
+
+
+
+input[type=range]::-webkit-slider-runnable-track  {
+    background: #eef2fd;
+    border-radius: 20px;
+}
+
+// input[type=range]::range-thumb  {
+//     background: red;
+//     color: red;
+//     border-radius: 20px;
+//     width: 100px;
+//     height: 100px;
+// }
+
+
+.toggle-line {
+    width: 80%;
+    margin-left:auto ;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.toggle-text {
+    font-size: 0.9rem;
+    color: #aaadbe;
+    margin: 0 0.5rem;
+}
+
+.toggle-red-text {
+    color: #dcab9c;
+    font-size: 0.7rem;
+    padding: 0.3rem;
+    background: #feefe8;
+    border-radius: 20px;
+}
+
+.toggle {
+    background: #d1dbf4;
+    border-radius: 20px;
+    width: 40px;
+    height: 25px;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.toggle:hover {
+    background: #3cdfcf;
+}
+
+.toggle-monthly {
+    background: #ffffff;
+    margin: 0 auto;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    visibility: hidden;
+   
+}
+
+.toggle-yearly {
+    background: #ffffff;
+    margin: 0 auto;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    visibility: hidden;
+    
+}
+
+.checked {
+    visibility: visible;
+    transition: 1s;
+}
+
+.middle-border {
+    width: 100%;
+    height: 1px;
+    background: #f1f0f5;
+    margin: 3.5rem 0;
+}
+
+.benefits {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.benefits-list ul {
+    list-style-image: url("images/icon-check.svg");
+}
+
+.benefits-list ul li {
+    margin-bottom: 20px;
+}
+
+.benefits-list ul li p {
+    margin-left: 10px;
+}
+
+.btn {
+    height: 50px;
+    min-width: 170px;
+    background: #293452;
+    outline: 0;
+    border: 0;
+    border-radius: 30px;
+    color: #ccd9ff;
+    cursor: pointer;
+}
+
+@media (max-width: 486px) {
+    .benefits {
+        justify-content: center;
+    }
+
+    button {
+        margin-top: 2rem;
+    }
+
+    .toggle-line {
+        margin: auto;
+       
+        justify-content: center;
+        
+    }
+}
+
+@media (max-width: 390px) {
+    .price-line {
+        justify-content: center;
+
+       p {
+        margin: 1rem 0;
+       }
+    }
+
+   
+}
